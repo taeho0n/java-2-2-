@@ -2,6 +2,7 @@
 job/
 job.md 
 text.*
+.gitignore
 
 # Compiled class file
 *.class
