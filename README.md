@@ -10,6 +10,7 @@ Working Dir. C or D 드라이브에 여러 개를 만들다보면 어떤게 시�
 
 아무 이름의 디렉토리 생성 후 -> README를 제외한 내용을 카피해서 옮기기
 
+-프로젝트 생성 방법-
 ctrl + shift + p -> java create project -> no build tools -> workspace_202130406 폴더 선택 
 
 # 2024.03.15
