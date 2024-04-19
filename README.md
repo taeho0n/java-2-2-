@@ -44,7 +44,7 @@ Wrapper객체를 기본 데이터 타입으로 빼내는 것을 언박싱이라�
 ㅣ
 ㅣ      중간은 6장까지  
 ㅣ   코드 오류수정 or 완성하기 
-ㅣ   객체와 관련된 내용 ,class만드는 법(생성자), 객체 , 상속 , Package 만드는 법and사용법 ,Project 생성 -> Git 초기화 / commit하는 법
+ㅣ   객체와 관련된 내용 ,class만드는 법(생성자), 객체 , 상속 , Package 만드는 법and사용법(import) ,Project 생성 -> Git 초기화 / commit하는 법
 ㅣ   브라우저는 chrome만 사용가능 나머지 X ,인터넷 검색, 책은 허용
 ㅣ
  ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
@@ -231,6 +231,9 @@ ctrl + shift + p -> java create project -> no build tools -> workspace_202130406
 
 -프로젝트 생성 후-
 새로 생성한 프로젝트에서  README를 제외한 내용을 카피 해서 깃허브와 연동 된 파일(JAVA2-2)로 옮기기 -> 오류발생 -> add path 후 정상 실행
+
+-레퍼지토리 초기화-
+프로젝트 생성 후 -> 소스제어 -> 레퍼지토리 초기화 -> 이후 커밋
 
 ctrl f5 - 시작 (디버그 실행x)
 shift f5 - 디버그 종료
