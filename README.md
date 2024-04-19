@@ -235,6 +235,10 @@ ctrl + shift + p -> java create project -> no build tools -> workspace_202130406
 -레퍼지토리 초기화-
 프로젝트 생성 후 -> 소스제어 -> 레퍼지토리 초기화 -> 이후 커밋
 
+-커밋-
+초기화 후에 터미널 창 -> git init으로 설치 -> git config user.email"" ,git config user.name""으로 등록 -> 이후 메시지 작성 후  커밋
+
+
 ctrl f5 - 시작 (디버그 실행x)
 shift f5 - 디버그 종료
 f5 -디버그 시작
