@@ -1,5 +1,9 @@
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello!");
+        StringBuffer sb= new StringBuffer("Hello");
+        sb.append("World!");
+        sb.append("abc");
+
+        System.out.println(sb);
     }
 }
