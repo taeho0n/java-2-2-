@@ -16,15 +16,16 @@ public class HashmapEx {
         }
         System.out.println();
 
-        Scanner scanner= new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         for(int i=0; i<3;i++){
             System.out.println("내가 찾고싶은 단어는?");
-            String eng =scanner.next();
+            String eng =s.next();
 
             String kor=dic.get(eng);
             if(kor==null) System.out.println(eng+"는없는 단어입니다.");
             else System.out.println(kor);
         }
+        s.close();
     }
-    
+   
 }

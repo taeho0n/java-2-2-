@@ -5,8 +5,76 @@
 * 모두 상속받는 슈퍼클래스이며 추상 클래스이다.
 * 상속받는 공통 메소드의 상수 수현
 
+1. 스윙 컴포넌트의 공통 기능,JComponent의 메소드
+```java
+public class JComponentEx {
+    public JComponentEx(){
+        super("JComponent의 공통 메소드 예제");
+        Container c=getContentPane();
+        c.setLayout(new FlowLayout());
+
+        JButton b1 = new JButton("Magenta/yellow Button");
+        JButton b2 = new JButton("Disable Button");
+        JButton b3 = new JButton("getx(), gety()");
+
+        b1.setBackground(Color.YELLOW);
+        b1.Foreground(Color.MAGENTA);
+        b1.setFont(new Font("Arial",Font.ITALIC,20));
+        b2.setEnabled(false);
+        b3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                JButton b=(JButton)e.getSource();
+                setTitle(b.getx()+","+b.gety());
+            }
+        });
+        
+        c.add(b1); c.add(b2); c.add(b3);
+
+        setSize(260,200); setVisible(true);
+
+    }
+
+    public static void main(String[] args) {
+        new JComponentEx();
+    }
+    
+}
+```
 
 
+2. JLable을 이용한 문자열과 이미지 출력을 하는 예제 코드
+```java
+
+public class LableEx  extends JFrame{
+    public LabelEx() {
+        setTitle("레이블 예제");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Container c= getContentPane();
+        c.setLayout(new FlowLayout());
+
+        JLabel textLabel= new JLabel("제임스 고슬링입니다!.");
+
+        ImageIcon img = new ImageIcon("images/Desert.jpg");
+        JLabel imLabel=new JLabel(img);
+
+        ImageIcon icon= new ImageIcon("images/icon.gif");
+        JLabel label =new JLabel("커피한잔 하실래예,전화 주이소", icon, SwingConstants.CENTER);
+
+        c.add(textLabel);
+        c.add(imageLabel);
+        c.add(label);
+
+        setSize(300,500);
+        setVisible(true);
+
+    }
+    
+    public static void main(String[] args) {
+        new LableEx();
+    }
+}
+
+```
 
 
 

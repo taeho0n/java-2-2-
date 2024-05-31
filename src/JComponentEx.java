@@ -3,8 +3,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 
-public class JComponentEx {
-    public JComponentEx(){
+public class JComponentEx extends JFrame {
+    public JComponentEx() {
         super("JComponent의 공통 메소드 예제");
         Container c=getContentPane();
         c.setLayout(new FlowLayout());
@@ -14,13 +14,13 @@ public class JComponentEx {
         JButton b3 = new JButton("getx(), gety()");
 
         b1.setBackground(Color.YELLOW);
-        b1.Foreground(Color.MAGENTA);
+        b1.setForeground(Color.MAGENTA);
         b1.setFont(new Font("Arial",Font.ITALIC,20));
         b2.setEnabled(false);
         b3.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
                 JButton b=(JButton)e.getSource();
-                setTitle(b.getx()+","+b.gety());
+                setTitle(b.getX()+","+b.getY());
             }
         });
         
