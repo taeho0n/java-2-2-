@@ -5,6 +5,45 @@
 * 모두 상속받는 슈퍼클래스이며 추상 클래스이다.
 * 상속받는 공통 메소드의 상수 수현
 
+>메뉴 구성
+* 메뉴아이템 -JMenuItem을 이용하여 생성
+* 메뉴 - 여러 개의 메뉴 아이템을 가짐. JMenu를 이용하여 생성
+* 메뉴바 - 메뉴들을 붙이는 바이며, 프레임에 부착. JMenuBar를 이용하여 생성
+* 분리선 - 메뉴아이템 사이의 분리선을서 separator라고 부르며, JMenu의 addSeparator()메로드를 호출아여 삽입
+
+
+>메뉴 만들기
+```java
+JMenuBar mb = new JMenuBar(); //메뉴바 mb 생성
+```
+
+
+>메뉴를 만들어 메뉴바에 붙인다.
+* 메뉴 이름은 JMenu생성자에 전달한다.
+* 메뉴바에 메뉴를 붙일 때 add()메소드를 사용한다.
+```java
+JMenu scrennMenu = new JMenu("Screen"); //Screen 메뉴 생성
+mb.add(screenMenu); //Screen 메뉴 삽입
+```
+
+
+>메뉴아이템을 생성하여 메뉴에 붙인다.
+```java
+screenMenu.add(new JMenuItem("Load"));
+screenMenu.add(new JMenuItem("Hide"));
+screenMenu.add(new JMenuItem("ReShow"));
+screenMenu.addSeparator(); //ReShow 메뉴아이템 다음에 분리선 삽입
+screenMenu.add(new JMenuItem("Exit"));
+```
+
+
+>메뉴바를 프레임에 붙인다.
+* setJMenuBar()메소드를 사용하여 메뉴바를 프레임에 붙인다.
+```java
+frame.setJMenuBar(mb);
+```
+
+
 1. 스윙 컴포넌트의 공통 기능,JComponent의 메소드
 ```java
 public class JComponentEx {
